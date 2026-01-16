@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Package application
+        run: mvn package
+        working-directory: bank-application
+
+      - name: Save build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifact
+          path: bank-application/target/
