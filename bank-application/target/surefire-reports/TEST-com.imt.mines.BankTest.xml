@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="com.imt.mines.BankTest" time="0.001" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="com.imt.mines.BankTest" time="0.002" errors="0" skipped="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -42,7 +42,7 @@
     <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
     <property name="java.vm.specification.version" value="21"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -57,7 +57,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="com.imt.mines.BankTest" name="testHappyPathAddAccount" time="0"/>
+  <testcase classname="com.imt.mines.BankTest" name="testHappyPathAddAccount" time="0.001"/>
   <testcase classname="com.imt.mines.BankTest" name="testHappyPathAddAccount2" time="0.001"/>
   <testcase classname="com.imt.mines.BankTest" name="testHappyPathAddAccount3" time="0"/>
 </testsuite>
