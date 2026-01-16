@@ -17,40 +17,40 @@ import java.util.ArrayList;
 public class Bank {
 
 	private static ArrayList&lt;BankAccount&gt; Accounts;
-<span class="nc" id="L20">	private final int initialSize = 1000;</span>
+<span class="fc" id="L20">	private final int initialSize = 1000;</span>
 	private boolean success;
 	// private double maximumBalance;
 	private double averageBalance;
 	// private double minumumBalance;
-<span class="nc" id="L25">	private int accNumber = 1;</span>
-<span class="nc" id="L26">	private int accountsLoaded = 0;</span>
+<span class="fc" id="L25">	private int accNumber = 1;</span>
+<span class="fc" id="L26">	private int accountsLoaded = 0;</span>
 	// Bank accManeger = new Bank();
 
-<span class="nc" id="L29">	public Bank() {</span>
+<span class="fc" id="L29">	public Bank() {</span>
 
-<span class="nc" id="L31">		Accounts = new ArrayList&lt;BankAccount&gt;(initialSize);</span>
+<span class="fc" id="L31">		Accounts = new ArrayList&lt;BankAccount&gt;(initialSize);</span>
 
-<span class="nc" id="L33">	}</span>
+<span class="fc" id="L33">	}</span>
 
 	public int addAccount(BankAccount acc, int isLoadAccount) {
-<span class="nc bnc" id="L36" title="All 2 branches missed.">		if (isLoadAccount == 0) {</span>
-<span class="nc" id="L37">			Accounts.add(acc);</span>
-<span class="nc" id="L38">			acc.setAccountNumber(accNumber);</span>
-<span class="nc" id="L39">			accountsLoaded++;</span>
-<span class="nc" id="L40">			accNumber++;</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">		if (isLoadAccount == 0) {</span>
+<span class="fc" id="L37">			Accounts.add(acc);</span>
+<span class="fc" id="L38">			acc.setAccountNumber(accNumber);</span>
+<span class="fc" id="L39">			accountsLoaded++;</span>
+<span class="fc" id="L40">			accNumber++;</span>
 		}
-<span class="nc bnc" id="L42" title="All 2 branches missed.">		if (isLoadAccount == 1) {</span>
-<span class="nc" id="L43">			Accounts.add(acc);</span>
-<span class="nc" id="L44">			accountsLoaded++;</span>
-<span class="nc" id="L45">			return accountsLoaded;</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">		if (isLoadAccount == 1) {</span>
+<span class="fc" id="L43">			Accounts.add(acc);</span>
+<span class="fc" id="L44">			accountsLoaded++;</span>
+<span class="fc" id="L45">			return accountsLoaded;</span>
 		}
-<span class="nc bnc" id="L47" title="All 2 branches missed.">		if (isLoadAccount == 2) {</span>
-<span class="nc" id="L48">			int accnumber1 = accountsLoaded + 1;</span>
-<span class="nc" id="L49">			Accounts.add(acc);</span>
-<span class="nc" id="L50">			acc.setAccountNumber(accnumber1);</span>
-<span class="nc" id="L51">			accountsLoaded++;</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">		if (isLoadAccount == 2) {</span>
+<span class="fc" id="L48">			int accnumber1 = accountsLoaded + 1;</span>
+<span class="fc" id="L49">			Accounts.add(acc);</span>
+<span class="fc" id="L50">			acc.setAccountNumber(accnumber1);</span>
+<span class="fc" id="L51">			accountsLoaded++;</span>
 		}
-<span class="nc" id="L53">		return acc.getAccountNumber();</span>
+<span class="fc" id="L53">		return acc.getAccountNumber();</span>
 	}
 
 	protected void setAccountsLoaded(int accountsLoaded) {

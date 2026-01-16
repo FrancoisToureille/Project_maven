@@ -24,18 +24,12 @@ public class BankTest {
 
     @Test
     public void testHappyPathAddAccount2() {
-        BankAccount account = new BankAccount(10000, 1000.0, "2024-01-01", person);
         BankAccount account2 = new BankAccount(10000, 1000.0, "2024-01-01", person);
-        bank.addAccount(account, 0);
         assertEquals(2, bank.addAccount(account2, 1));
     }
     @Test
     public void testHappyPathAddAccount3() {
-        BankAccount account = new BankAccount(10000, 1000.0, "2024-01-01", person);
-        BankAccount account2 = new BankAccount(10000, 1000.0, "2024-01-01", person);
         BankAccount account3 = new BankAccount(10000, 1000.0, "2024-01-01", person);
-        bank.addAccount(account, 0);
-        bank.addAccount(account2, 1);
 
         assertEquals(3, bank.addAccount(account3, 2));
     }
