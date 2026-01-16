@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Package application
-        run: mvn package
         working-directory: bank-application
+        run: mvn package
 
       - name: Save build artifact
         uses: actions/upload-artifact@v4
